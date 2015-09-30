@@ -1,4 +1,4 @@
-summ = int(input ('Vvedite summu: '))
+﻿summ = int(input ('Vvedite summu: '))
 
 if summ < 0:
     print ('Game over')
@@ -29,41 +29,26 @@ else:
 
 if a > 0:
     print (' ', a, 'x 500$')
-else:
-    z = 6
     
 if c > 0:
    print (' ', c, 'x 200$')
-else:
-     z = 6
 
 if e > 0:
    print (' ', e, 'x 100$')
-else:
-     z = 6
 
 if g > 0:
    print (' ', g, 'x 50$')
-else:
-     z = 6
 
 if w > 0:
     print (' ', w, 'x 20$')
-else:
-     z = 6
 
 if r > 0:
    print (' ', r, 'x 10$')
-else:
-     z = 6
 
 if y > 0:
    print (' ', y, 'x 5$')
-else:
-     z = 6
 
 if i > 0:
    print (' ', i, 'x 1$')
-else:
-     z = 6
+
 
