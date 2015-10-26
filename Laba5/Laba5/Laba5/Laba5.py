@@ -8,20 +8,22 @@ kotoroe vubral computer''')
 nachalnoeChislo = int (input('Vvedite nachalnoe chislo: '))
 konechnoeChislo = int (input('Vvedite konechnoe chislo: '))
 computerRandom = random.randint(nachalnoeChislo,konechnoeChislo)
-otvet = int (input('Vach variant otveta: '))
+#otvet = int (input('Vach variant otveta: '))
 schetchik = 1
 
-while otvet != computerRandom:
+while True:
 
-    if  otvet > computerRandom:
-        print ('Vache chislo > zagadannogo')
-        otvet = int (input('Drugoi variant otveta: '))
-        schetchik = schetchik + 1
+	otvet = int (input('Vach variant otveta: '))
 
-    if  otvet < computerRandom:
-        print ('Vache chislo < zagadannogo')
-        otvet = int (input('Drugoi variant otveta: '))
-        schetchik = schetchik + 1
-                  
-print ('Game over, Zagadanoe chislo: ', computerRandom)
-print ('Ugadali s ', schetchik, ' raza')
+	if  otvet > computerRandom:
+		print ('Vache chislo > zagadannogo')
+		schetchik = schetchik + 1
+
+	elif  otvet < computerRandom:
+		print ('Vache chislo < zagadannogo')
+		schetchik = schetchik + 1
+
+	else:
+		print ('Game over, Zagadanoe chislo: ', computerRandom)
+		print ('Ugadali s ', schetchik, ' raza')
+		break
