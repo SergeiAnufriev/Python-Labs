@@ -22,6 +22,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Natural.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Opredelit_prostoe_li_chislo.py" />
   </ItemGroup>
   <PropertyGroup>
