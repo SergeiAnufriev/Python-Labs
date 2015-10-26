@@ -1,10 +1,10 @@
 ﻿import random
 
-exit = 1
+#exit = 1
 
 print ('Igra v kosti')
 
-while exit == 1:
+while True:
 
     kubik1 = random.randint(1, 6)
     kubik2 = random.randint(1, 6)
@@ -16,4 +16,4 @@ while exit == 1:
     print ('Hotite povtorit? vvedite 1')
     print ('Hotite zaverchit rabatu? vvedite 2')
 
-    exit = int (input( 'Vvedite 1 and 2: '))
+    if (input( 'Vvedite 1 and 2: ')).lower() == "2" : break
